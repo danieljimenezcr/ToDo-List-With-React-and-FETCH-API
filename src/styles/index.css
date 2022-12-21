@@ -1,12 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-/* 
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #36d1dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #5b86e5,
+    #36d1dc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #5b86e5,
+    #36d1dc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.main-container {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.todo-container {
+  background-color: #ffffff;
+  width: 485px;
+  height: 500px;
+  border-radius: 0.6rem;
+  overflow-y: scroll;
+  box-shadow: 10px 10px 29px -1px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 10px 10px 29px -1px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 10px 10px 29px -1px rgba(0, 0, 0, 0.44);
+}
+.app-title {
+  color: #1e90ff;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
 
-*/
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+.input-task {
+  font-size: 1.6rem;
+  width: 80%;
+  padding: 1rem 1.4rem;
+  border: 1px solid #ced6e0;
+}
+.task-list {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.4rem;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  margin: 0.6rem 0;
+  background-color: #f1f2f6;
+  width: 80%;
+}
+.trash-icon{
+  cursor: pointer;
+}
+.trash-icon:hover {
+  color: #eb4d4b;
+}
